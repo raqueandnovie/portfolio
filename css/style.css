@@ -1,1 +1,324 @@
+body { 
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-image:url('images/banner-top-dark.jpg');
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: 650px;
+}
+.top-nav {
+    background-color: #41a3dd;
+    position: fixed;
+    padding: 20px 0;
+    z-index: 10;
+    left: 0;
+    -webkit-backdrop-filter: blur(1);
+}
+.logo{
+    color: white; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #41a3dd, 0 0 80px #41a3dd, 0 0 90px #41a3dd;
+    font-size: 230%;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration-color: white;
+    margin-bottom: 0;
+    float: right;
+    padding-right: 40px;
+}
+nav ul {
+    margin-bottom: 0 !important;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
 
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 3px;
+}
+nav ul li a:hover{
+    color: #1a1a1a;
+
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #1a1a1a;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.banner { 
+    height: 100%;
+}
+.detail {
+    margin: 0 auto;
+}
+.detail h2 {
+    margin: 20px 0;
+}
+.detail h2 span{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #41a3dd;
+}
+.detail h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:30px !important;
+    border: 1px solid #7c7878;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+span{
+    color: #41a3dd;
+}
+.detail p{
+    color: white;
+    line-height: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+}
+.detail a{
+background: orangered;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.image{
+    position: relative;
+ }
+.image img {
+  right: -100px;
+  height: 100%;
+  position: absolute;
+}
+.image img:hover{
+    bottom: 0;
+    transition: 1s;
+}
+.image:hover .amaw{
+    left: 45%;
+}
+.about-us {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+.about-us .title,
+.activities .title,
+.contact .title {
+    max-width: 220px;
+    margin: 0 auto;
+}
+.title span {
+    color: #41a3dd;
+}
+.about-us h2,
+.activities h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #fff;
+    padding-block: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.about-content {
+   margin-top: 20px !important;
+}
+.about-content .text p {
+    color: #fff;
+    font-size: 17px;
+}
+.about-img {
+    background-image: url('images/img5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+}
+.border-bottom {
+    border: 2px solid #41a3dd;
+    border-radius: 20px;
+}
+.about img{
+    width: 1000px;
+    transition: bottom 1s, left 1s;
+    transform: translate(-0%);
+}
+.text{
+    letter-spacing: 4px;
+    font-size: 16px;
+    
+}
+.h1{
+    font-size: 300%;
+    text-align: center;
+}
+.main{
+    width: 1150px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text h5{
+    font-size: 30   px;
+}
+.activities {
+    padding: 20px 0;
+    background-image: url('images/team-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.activities-content {
+    max-width: 1000px;
+    margin: 30px auto 0 auto !important;
+}
+.activities-box{
+    border: 5px solid #41a3dd;
+    background-color: rgb(155 150 150 / 40%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.activities-box .social ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 0;
+}
+.activities-box .social ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.activities-box .social ul li a { 
+    font-size:25px; 
+    color:#fff; 
+}
+.activities-box .social ul li a:hover {
+    color: #41a3dd;
+}
+.activities-box .name {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.list-activities ul {
+    text-align: left;
+    list-style-type: disclosure-closed;
+}
+.list-activities ul li {
+    font-size: 20px;
+    color: #fff;
+}
+.list-activities ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.list-activities ul li a:hover{
+    color: #41a3dd;
+}
+.contact {
+    background-image: url('images/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact .box-content {
+    margin: 30px auto;
+    color: #fff;
+}
+.contact .box-content h1 {
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #41a3dd;
+}
+.contact .content {
+    border-radius: 5px;
+    background-color: rgb(155 150 150 / 40%);
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 30px !important;
+}
+.contact .content label{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.submit button {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #41a3dd;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.submit button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.submit {
+  text-align: right;
+  margin-top: 20px;
+}
+.footer { 
+    padding: 10px;
+    background-color: #41a3dd;
+}
+.footer p {
+    margin-bottom: 0 !important;
+    color: #fff;
+}
